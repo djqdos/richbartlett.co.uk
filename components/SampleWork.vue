@@ -22,7 +22,7 @@
                                     </li>
                                 </ul>
 
-                                <div v-html="$md.render(selectedWork.body)" />
+                                <div class="body" v-html="$md.render(selectedWork.body)" />
 
                                 <a :href="selectedWork.url" class="visit">Visit Site</a>
                             </div>
@@ -49,17 +49,18 @@ export default {
         }
     },
 
-    async fetch() {        
-        this.works = await this.$nuxt.context.$content("work")
-                     .fetch();                
+    async created() {         
+        let bp;        
+        bp = await this.$nuxt.context.$content("work")
+             .fetch();                  
+        this.works = bp;
+        this.selectedWork = bp[0];    
     },
 
-    mounted() {                
-        this.selectedWork = this.works[0];               
-        const that = this;
+    mounted() {
         setTimeout(() => {                
-            that.anim();
-        }, 10);        
+            this.anim();
+        }, 400);    
     },
 
     methods: {
@@ -90,7 +91,7 @@ export default {
                 easing: 'linear'
             });  
             anime({
-                targets: 'p',
+                targets: '.body',
                 opacity: [0, 1],
                 translateX: [translateLength, 0],
                 duration: duration,
@@ -198,7 +199,7 @@ export default {
         border-radius: 10px;
     }
 
-    p {
+    .body {
         opacity: 0;
     }
 
