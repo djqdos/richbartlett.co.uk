@@ -45,7 +45,17 @@ export default {
     data() {
         return {
             works: [],
-            selectedWork: null
+            selectedWork: null,
+            colors: [
+                '14,70,83',
+                '1,117,192',
+                '150,155,158',
+                '96,51,81',
+                '1,117,192',
+                '215,28,40',
+                '1,117,192',
+                '255,88,0',
+            ]        
         }
     },
 
@@ -66,13 +76,13 @@ export default {
     methods: {
         showWork(index) {
             this.selectedWork = this.works[index];
-            this.anim();
+            this.anim(index);
         },
-        anim() {
-            console.log("anim");
+        anim(index) {
             const anime = this.$anime;
             const duration = 400;
             const translateLength = 500;            
+            const selectedCol = this.colors[index];
 
             anime({
                 targets: 'h2',
@@ -98,7 +108,7 @@ export default {
                 //delay: 450,
                 easing: 'linear'
             });       
-            
+
             anime({
                 targets: '.visit',
                 opacity: [0, 1],
@@ -115,7 +125,29 @@ export default {
                 duration: duration,
                 delay: 0,
                 easing: 'linear'
-            });                      
+            });     
+
+            if(selectedCol) {
+                console.log("selectedCol = ", selectedCol);
+                anime({
+                    targets: '.hero',                
+                    duration: 10,
+                    delay: 0,
+                    easing: 'linear',
+                    begin: function(anim) {
+                        const el = document.querySelector(".hero");
+                        el.style.backgroundImage = `linear-gradient(160deg, rgba(0,0,0,0), rgba(0,0,0,1))`;
+                    },
+                    complete: function(anim) {
+                        const el = document.querySelector(".hero");
+                        const c = `linear-gradient(160deg, rgba(${selectedCol}, 0), rgba(${selectedCol}, 1))`;
+                        console.log("c = ", c);
+                        el.style.backgroundImage = c;
+                        el.style.opacity = 1;                        
+                        console.log("end col = ", el.style.backgroundImage);
+                    }                
+                });     
+            }                        
         }
     }
 }
@@ -125,6 +157,12 @@ export default {
     .hero {
         @apply h-screen pt-20;        
         background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); 
+        /* background: linear-gradient(160deg, rgba(14,70,83,0), rgba(14,70,83,1)); */
+        /* background: linear-gradient(160deg, rgba(255,88,0, 0), rgba(255,88,0, 1)); */
+        background: linear-gradient(160deg, rgba(1,117,192, 0), rgba(1,117,192, 1));
+        background: linear-gradient(160deg, rgba(96,51,81, 0), rgba(96,51,81, 1));
+        
+        
     }
 
     .hero-grid {

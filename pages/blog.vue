@@ -94,7 +94,9 @@ export default {
 
 <style scoped>
     .blog {
-        @apply pt-20 pb-10;
+        @apply pt-20;
+        background: linear-gradient(160deg, rgba(14,70,83,0), rgba(14,70,83,1));
+        background: linear-gradient(160deg, rgb(255,88,0, 0), rgb(255,88,0,1));
     }
 
     .blog-container {
