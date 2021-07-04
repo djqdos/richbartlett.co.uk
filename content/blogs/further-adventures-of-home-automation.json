@@ -1,0 +1,11 @@
+{
+  "date": "2020-09-14T11:12:50.601Z",
+  "title": "Further adventures of Home Automation",
+  "excerpt": "Expanding on the initial setup of Home Assistant, I add a Stream Deck into the mix.",
+  "body": "I'd heard about the [stream deck](https://www.elgato.com/en/gaming/stream-deck) from Elgato, a small 15-key macro board that is primarily used for streamers and content-creators, to be able to quickly change scenes etc. I'm not a streamer, but when the SDK was announced, I wondered if I could use that to my advantage.\n\nHappily, someone else had come to a similar conclusion before me, and had released [some tools](https://github.com/BarRaider/streamdeck-tools) to create plugins using C#.\n\nI started to write a custom plugin that would allow me to do a few things:\n\n* Have a button that I can press that will switch my AV Receiver to the desired input (PC, Playstation, Xbox etc).\n* Turn AV Receiver on/off\n* Change volume level of receiver\n* Turn lights on/off at the press of a button\n\n![](/img/streamdeck1.png)\n\n\n\nThis worked great! Now I can have the stream deck next to my sofa, and control all the things I need to from the comfort of my seat!\n\nOne thing it didn't do, however, was update when a light was either on/off.\n\nHome Assistant has a few websockets that you can hook into. One of those was a state change hook. Whenever a device changed state (eg, a light went from 'off' to 'on', it would broadcast this out.\n\nSo, I expanded my plugin so that it listened for these web hooks on startup. Now, when a light changes, it also updates the stream deck! - I can now see at-a-glance, if any of my lights are on or not! \n\n![](/img/streamdeck2.png)\n\nIf you want to have a look at the code required to make this all work, have a look at my [github project.](https://github.com/djqdos/ZigbeeLights)",
+  "tags": [
+    "home-network",
+    "home-assistant"
+  ],
+  "headerimg": "/img/blogheaders/homeassistant.png"
+}

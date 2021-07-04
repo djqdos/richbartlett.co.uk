@@ -1,0 +1,5 @@
+{
+  "title": "Home Automation",
+  "image": "/img/streamdeck.png",
+  "body": "A relatively new interest of mine is Home Automation. Running [Home Assistant](https://www.home-assistant.io/) on my home server, with a Conbee 2 usb stick, I can control all of the lights and equipment in my house.\n\nA couple of Google Home's provide voice control, and I've repurposed an Elgato Stream Deck (bought with express wish to tinker with!) with some custom plugins to provide a 1-touch option to turn lights on/off, and switch inputs on the AV receiver. This uses the excellent library from Tobi Mori, and expands upon it for my needs.  Hooks into the State Changed API from Home Assistant, so I can update the icons on or off depending on the state.\n\nIf you want to see my code for the lights, check my github:\n\n<https://github.com/djqdos/ZigbeeLights>"
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2012-08-06T23:00:00.000Z",
+  "title": "A few Google Maps tools / handy websites",
+  "body": "## A few Google Maps tools / handy websites\n\nI've been working with Google Maps a fair bit recently, and during my researching / development, I've come across a few handy websites.\\\n[\\\nhttp://www.birdtheme.org/useful/v3tool.html](http://www.birdtheme.org/useful/v3tool.html)\\\n\\\nUseful site for plotting points on a map. I've used this for generating \"custom-routes\", that do not stick to streets/paths\\\n\\\n<http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html>\\\n\\\nThis is very useful site for styling the actual maps. from Google, this allows you to hide/show elements, and change colours of just about everything. Once you are done, you can click the 'show JSON' button to get a json object of your styles that you can import into your project.\\\n\\\n<http://www.cycloloco.com/shadowmaker/shadowmaker.htm>\\\n\\\nHandy site for generating shadows for custom placemarker images. Upload your image, and it will generate a shadow image. The second handy part, is that it will give you the code to place into your page for your marker, shadow et al.\\\n\\\nLet me know if you discover any more!",
+  "tags": [
+    "javascript"
+  ],
+  "excerpt": "A few google maps tools"
+}

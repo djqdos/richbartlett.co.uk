@@ -1,0 +1,11 @@
+{
+  "date": "2020-09-14T11:36:01.278Z",
+  "title": "More adventures with Home Automation",
+  "excerpt": "Adding a floor-plan",
+  "body": "After seeing some rather cool 3D floor plans that people had done in Home Assistant, I wanted to do something similar.\n\nFollowing a couple of blogs on how people had created them, I got to work with [Sweet Home 3D](http://www.sweethome3d.com/), to design my house layout. \n\n![](/img/floorplan3d.png)\n\nThis took a while, but was quite a fun little project!\n\nOnce the design had been completed, I rendered the plans out into a collection of 3D rendered images, ready to be plugged into Home Assistant.\n\nI first rendered an image of each of the floors in my house with all of the lights off, and one with each of the lights on.\n\nThen, split those images out in Photoshop, so I had an image for each room, both with the light off, and with the light on.\n\nEditing the ui-lovelace.yaml file, I added buttons for the lights in the corresponding locations. I also added the locations of the motion and door sensors I'd also purchased.\n\n![](/img/floorplanrender.png)\n\nSide note:\n\nI had initially gone with smart bulbs to do the automation, but I realised that in order for everything to work, the light switches on the walls needed to be permanently on. This meant that I lost the regular 'switch the lights on/off at the switch' functionality. Plus, the smart bulbs are expensive, in comparison to a 'normal' bulb.\n\nI've since replaced those bulbs with normal ones, but replaced the light switch itself for a Zigbee-based one. This way, I retain the automated control of the lights, but I also regain the ability to switch the lights on/off at the wall!",
+  "tags": [
+    "home-assistant",
+    "home-network"
+  ],
+  "headerimg": "/img/blogheaders/homeassistant.png"
+}

@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text-color: white;
+  --accent-color: rgb(235, 177, 70);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: var(--text-color);
+  font-family: "Arial";
+  @apply text-2xl;
+}
+
+a {
+  @apply no-underline;
+  color: var(--text-color);
+}
+
+p {
+  @apply pb-2 mb-4;
+}
+
+.page-max {
+  @apply w-4/5 mx-auto;
+}
+
+.main-heading {
+  @apply text-3xl mb-10 uppercase;
+}
+
+.main-heading::before {
+  content: '//: ';
+  @apply text-3xl;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,104 @@
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="html5.svg"
+   id="svg895"
+   version="1.1"
+   enable-background="new 221.807 89.47 440 621.061"
+   viewBox="221.807 89.47 440 621.00302">
+   
+  <metadata
+  <defs
+     id="defs899" />
+  <sodipodi:namedview
+     inkscape:current-layer="g893"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="2148"
+     inkscape:cy="2313.3513"
+     inkscape:cx="-2110.6744"
+     inkscape:zoom="0.0766"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview897"
+     inkscape:window-height="1020"
+     inkscape:window-width="1624"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <filter
+     y="-0.050000001"
+     x="-0.050000001"
+     height="1.5"
+     width="1.5"
+     id="a">
+    <feFlood
+       id="feFlood868"
+       flood-opacity=".5"
+       result="floodFill"
+       flood-color="#000" />
+    <feComposite
+       id="feComposite870"
+       result="coloredAlpha"
+       operator="in"
+       in2="SourceAlpha"
+       in="floodFill" />
+    <feGaussianBlur
+       id="feGaussianBlur872"
+       stdDeviation="8"
+       result="blur"
+       in="coloredAlpha" />
+    <feComposite
+       id="feComposite874"
+       result="maskedOffsetBlur"
+       operator="out"
+       in2="SourceGraphic"
+       in="blur" />
+    <feMerge
+       id="feMerge880">
+      <feMergeNode
+         id="feMergeNode876"
+         in="maskedOffsetBlur" />
+      <feMergeNode
+         id="feMergeNode878"
+         in="SourceGraphic" />
+    </feMerge>
+  </filter>
+  <g
+     transform="translate(0,-0.02850262)"
+     id="g893">
+    <path
+       id="path883"
+       d="M 261.849,660.647 221.807,211.522 h 440 L 621.721,660.576 441.537,710.53 Z"
+       fill="#e44d26" />
+    <path
+       id="path885"
+       d="M 441.807,672.348 587.403,631.981 621.661,248.246 H 441.807 Z"
+       fill="#f16529" />
+    <path
+       id="path887"
+       d="m 441.807,414.82 h -72.888 l -5.035,-56.406 h 77.923 V 303.33 H 303.683 l 1.32,14.778 13.538,151.794 h 123.266 z m 0,143.056 -0.242,0.066 -61.346,-16.566 -3.922,-43.93 h -55.294 l 7.718,86.489 112.834,31.323 0.252,-0.071 z"
+       fill="#ebebeb" />
+    <path
+       id="path889"
+       d="m 262.745,89.47 h 27.992 v 27.656 h 25.606 V 89.47 h 27.993 v 83.75 h -27.993 v -28.044 h -25.606 v 28.044 h -27.99 z m 118.404,27.774 H 356.507 V 89.47 H 433.8 v 27.774 H 409.146 V 173.22 H 381.15 V 117.244 Z M 446.065,89.47 h 29.19 l 17.955,29.428 17.938,-29.428 h 29.2 v 83.75 h -27.882 v -41.512 l -19.259,29.778 h -0.481 l -19.272,-29.778 v 41.512 h -27.39 V 89.47 Z m 108.212,0 h 28 v 56.068 h 39.368 v 27.682 h -67.368 z" />
+    <path
+       id="path891"
+       d="m 441.617,414.82 v 55.082 h 67.83 l -6.395,71.44 -61.435,16.58 v 57.307 l 112.924,-31.294 0.826,-9.309 12.946,-145.014 1.344,-14.792 h -14.842 z m 0,-111.49 v 55.084 H 574.67 l 1.103,-12.382 2.51,-27.924 1.318,-14.778 z"
+       fill="#ffffff" />
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+{
+  "title": "Home Networking",
+  "image": "/img/server.jpg",
+  "body": "I've been into home networking for many years now. Starting off with just my PC hooked into the TV. to a modded OG Xbox running XBMC, to a Raspberry PI running Plex. \n\nMy latest thing is a rackmount server case running [Unraid](https://unraid.net/) this contains all my digitized media. Taking advantage of the Docker and Virtual Machine support, I've got all my Home Automation software (Home Assistant, Node-Red etc) running as docker containers, Pi-hole ad-filter etc.\n\nTaking inspiration from a few Youtube videos about running virtual machines with hardware pass-through, I deployed a Windows vm that runs Virtual DJ, so I can power my turntables!\n\nRecently added the Jitsi-Meet software, so my friends and I can keep in touch via a video link during the events of 2020. Yes, I could have used google hangouts/zoom etc, but where is the fun in that!"
+}

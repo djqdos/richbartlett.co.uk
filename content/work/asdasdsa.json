@@ -1,0 +1,12 @@
+{
+  "title": "Lakehouse Carpentry",
+  "tags": [
+    "nuxtjs",
+    "vuejs"
+  ],
+  "url": "https://youthful-keller-3cf8f1.netlify.app/",
+  "sourcecode": "https://github.com/djqdos/lakehouse-carpentry",
+  "body": "A small site detailing",
+  "showonsite": false,
+  "image": "/img/lakehouse.png"
+}
