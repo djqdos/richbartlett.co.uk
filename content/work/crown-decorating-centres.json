@@ -1,0 +1,12 @@
+{
+  "title": "Crown Decorating Centres",
+  "image": "/img/screenshots/crowndecorationgcentres.PNG",
+  "body": "B2B based website for Trade accounts\n\nPurchase equipment and paints directly, or in-store collection\n\n*Features*\n\n* Account management\n* Online Purchases\n* Online Purchases for in-store collection\n* \"My Job-List\" for job management\n* Multilinngual",
+  "showonsite": true,
+  "url": "https://www.crowndecoratingcentres.co.uk/",
+  "tags": [
+    "C#",
+    ".Net",
+    "Sitecore"
+  ]
+}

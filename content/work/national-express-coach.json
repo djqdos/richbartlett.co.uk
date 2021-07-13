@@ -7,9 +7,10 @@
     "Umbraco",
     "REST API",
     "Web API",
-    "Javascript"
+    "Javascript",
+    "Azure"
   ],
   "url": "https://www.nationalexpress.com/en",
   "showonsite": true,
-  "body": "National Expresss"
+  "body": "National Express Coach website for planning and purchasing tickets.\n\n*Features*\n\n* Journey Planner\n* Event listings and planner\n* Holiday travel planner\n* Timetables\n* Route Mapper\n* Multilingual\n* Companion Mobile App\n\n\n\nThe Mobile app is powered by several in-house Web API's and third party integrations for live updates etc.\n\n* Account Management\n* Ticket Purchases\n* Live coach tracker"
 }

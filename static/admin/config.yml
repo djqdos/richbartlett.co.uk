@@ -1,0 +1,116 @@
+backend:
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+
+
+# backend:
+#   name: bitbucket
+#   repo: Richardbartlett/personal
+#   branch: master
+  #auth_type: implicit
+  #app_id: cySUqmzfskHGqgVrDk
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "employment"
+    label: "Employment"
+    format: "json"
+    folder: "content/employment"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - { label: "Logo", name: "logo", widget: image }
+      - { label: "Employment From", name: "from", widget: date }
+      - { label: "Employment To", name: "to", widget: date }
+      - { label: "Body", name: "body", widget: markdown }
+
+  - name: "work"
+    label: "Work"
+    format: "json"
+    folder: "content/work"
+    media_folder: '/static/img/screenshots'
+    public_folder: '/img/screenshots'
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - { label: "Image", name: "image", widget: image }
+      - { label: "tags", name: "tags", widget: relation, collection: "tags", valueField: "{{title}}", searchFields: ['title'], multiple: true}
+      - { label: "Url", name: "url", widget: string }
+      - { label: "Source Code", name: "sourcecode", widget: string, required: false }
+      - { label: "Body", name: "body", widget: markdown }
+      - { label: "Show on site", name: "showonsite", widget: boolean }
+
+  - name: "tags"
+    label: "Tags"
+    format: "json"
+    folder: "content/tags"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: string }
+
+  - name: "experience"
+    label: "Experience"
+    format: "json"
+    folder: "content/experience"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - { label: "Percentage", name: "percentage", widget: string }
+
+  - name: "hobbies"
+    label: "Hobbies"
+    format: "json"
+    folder: "content/hobbies"
+    create: true
+    slug: "{{title}}"
+    fields: 
+      - { label: "title", name: "title", widget: string }
+      - { label: "Image", name: "image", widget: image }
+      - { label: "Body", name: "body", widget: markdown }
+
+  - name: "certifications"
+    label: "Certifications"
+    format: "json"
+    folder: "content/certifications"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "title", name: "title", widget: string }
+      - { label: "logo", name: "logo", widget: image }
+
+  - name: "blogs"
+    label: "Blogs"
+    format: "json"
+    folder: "content/blogs"
+    create: true
+    slug: "{{title}}"
+    media_folder: '/static/img/blogheaders'
+    public_folder: '/img/blogheaders'
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - { label: "Header", name: "headerimg", widget: image, required: false }
+      - { label: "tags", name: "tags", widget: relation, collection: "tags", valueField: "{{slug}}", searchFields: ['title'], multiple: true}
+      - { label: "Excerpt", name: "excerpt", widget: markdown }
+      - { label: "Date", name: "date", widget: date }
+      - { label: "Body", name: body, widget: markdown }
+
+
+  - name: "testimonials"
+    label: "Testimonials"
+    format: "json"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - { label: "By", name: "by", widget: string }
+      - { label: "Position", name: "position", widget: string }
+      - { label: "Company", name: "company", widget: string }
+      - { label: "User LinkedIn", name: "user_linkedin", widget: string }
+      - { label: "Body", name: "body", widget: markdown}

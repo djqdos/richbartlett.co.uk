@@ -1,12 +1,13 @@
 {
   "title": "Lakehouse Carpentry",
   "tags": [
-    "nuxtjs",
-    "vuejs"
+    "Javascript",
+    "NuxtJS",
+    "VueJS"
   ],
   "url": "https://youthful-keller-3cf8f1.netlify.app/",
   "sourcecode": "https://github.com/djqdos/lakehouse-carpentry",
-  "body": "A small site detailing",
-  "showonsite": false,
-  "image": "/img/lakehouse.png"
+  "body": "Small site built for a friends carpentry business.\n\n*Features*\n\n* *JAMStack static site*\n* *Netlify CMS for site management*\n* *Dynamic, sortable page element components, allowing for a full custom page design*\n* *Tailwind CSS integration*\n* *Powered by NuxtJS*",
+  "showonsite": true,
+  "image": "/img/screenshots/lakehouse.PNG"
 }

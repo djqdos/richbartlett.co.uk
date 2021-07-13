@@ -7,9 +7,10 @@
     "Javascript",
     "REST API",
     "Web API",
-    "Azure"
+    "Azure",
+    "Umbraco"
   ],
   "url": "https://nxbus.co.uk/",
-  "body": "National Express Bus",
+  "body": "Online bus timetables for the west midlands and surrounding areas.\n\n*Features*\n\n* Up-to-date timetables via API\n* Journey Planner\n* Places to visit\n* Mobile app for ticket purchases\n\n\n\nThe mobile app was powered by a backend API:\n\n* Account management\n* Ticket Purchases\n* Timetable Updates\n* Live Bus tracker\n* Family ticket sharing",
   "showonsite": true
 }

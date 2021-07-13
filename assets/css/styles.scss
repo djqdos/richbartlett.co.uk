@@ -7,18 +7,33 @@
 }
 
 :root {
-    --text-color: white;
-    --accent-color: rgb(235, 177, 70);
+    --text-color: black;
+
+    --accent-hue: 0;
+    --accent-sat: 79%;
+    --accent-light: 27%;        
 }
 
 
 body {
-    overflow-x: hidden;
-    background-color: black;
+    overflow-x: hidden;            
     color: var(--text-color);
     font-family: "Arial";
-    @apply text-2xl
+    @apply text-base bg-gray-200;
+    --accent-color: hsl(var(--accent-hue), var(--accent-sat), var(--accent-light));
+
+    @apply min-h-screen bg-opacity-20;
+    background: url(/img/decks-flipped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;        
+    background-attachment: fixed;
+    
 }
+
+.container {
+    max-width: 100%;
+}
+
 
 a {
     @apply no-underline;
@@ -29,18 +44,35 @@ p {
     @apply pb-2 mb-4;
 }
 
-.page-max {    
-    @apply w-4/5 mx-auto;    
-}
-
 .main-heading {
-    @apply text-3xl mb-10 uppercase;
+    @apply text-2xl mb-10 uppercase;
 
     &::before {
         content: '//: '; 
-        @apply text-3xl;
+        @apply text-2xl;
     }   
 }
+
+main {
+    @apply p-4;
+}
+
+.main {
+    @apply col-span-1 min-h-screen;
+    @apply lg:col-span-9;
+    background-color: white;
+}
+
+
+.content-block .content ul {    
+    list-style: disc !important; 
+    list-style-position: outside;
+    @apply ml-4;
+}
+
+.content-block .content ul li {                
+        
+} 
 
 
 
