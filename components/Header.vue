@@ -31,8 +31,7 @@ export default {
     },
 
     async fetch() {
-        this.certs = await this.$content("certifications").fetch();
-        console.log("certs = ", this.certs);
+        this.certs = await this.$content("certifications").fetch();        
     }
 }
 </script>

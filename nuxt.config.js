@@ -15,18 +15,24 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css',
+      },      
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/tailwind.css',
-    '@/assets/css/styles.css'
+    '@/assets/css/styles.css',
+    { src: 'prism-themes/themes/prism-material-oceanic.css', lang: 'css' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+  plugins: [    
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,13 +45,21 @@ export default {
     'nuxt-animejs'
   ],
 
+  content: {
+    markdown: {
+      prism: {
+        theme: false
+      }
+    }
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/markdownit'
+    [ '@nuxtjs/markdownit', { html: true, injected: true, linkify: true, use: ['markdown-it-prism'] }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -57,7 +71,14 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  markdownit: {
-    runtime: true
+  // markdownit: {
+  //   runtime: true,
+  //   html: true,
+  //   injected: true,
+  //   use: ['markdown-it-prism']
+  // },
+  pageTransition: {
+    name: 'my-page',
+    mode: 'out-in'
   }
 }
