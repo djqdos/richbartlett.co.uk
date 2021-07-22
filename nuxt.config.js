@@ -59,7 +59,13 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    [ '@nuxtjs/markdownit', { html: true, injected: true, linkify: true, use: ['markdown-it-prism'] }]
+    [ '@nuxtjs/markdownit',     
+      { html: true, 
+        runtime: true,
+        injected: true, 
+        linkify: true,         
+        use: ['markdown-it-prism'] 
+      }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -69,7 +75,17 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  build: {    
+    babel: {
+      "plugins": [
+       ["prismjs", {
+            "languages": ["javascript", "css", "markup", "csharp"],
+            "plugins": ["line-numbers"],
+            "theme": "twilight",
+            "css": true
+        }]  
+      ]
+  }
   },
   // markdownit: {
   //   runtime: true,

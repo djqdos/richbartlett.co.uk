@@ -9,6 +9,10 @@
 
 <script>
 
+import "prismjs/components/prism-javascript"
+
+import "prismjs/components/prism-csharp"
+
 export default {
     async asyncData({ $content, params }) {
         const content = await $content("blogs", params.slug)
@@ -23,7 +27,7 @@ export default {
         const pres = document.querySelectorAll("pre");
         pres.forEach(item => {
             item.classList.add("line-numbers");
-            item.classList.add("language-html");
+            // item.classList.add("language-html");
             //  item.classList.add("language-csharp");
         })        
 

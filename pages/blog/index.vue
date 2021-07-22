@@ -51,8 +51,7 @@ export default {
                       'key': key,
                       'data': grouped[key].sort((a,b) => a.date < b.date)
                   })
-              });
-        console.log(JSON.stringify(sortedGroup));
+              });        
 
         return { 
             blogPosts,
