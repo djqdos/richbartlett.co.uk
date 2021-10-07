@@ -2,8 +2,9 @@
     <main class="main">
         <div class="container">
             <div class="hero">
-                <h1>Hi, I'm Rich</h1>
-                <h2>Web Developer</h2>
+                <div v-html="$md.render(content.body)" class="home-content">
+
+                </div>
             </div>
         </div>
     </main>
@@ -11,7 +12,14 @@
 
 <script>
 export default {
+    async asyncData({ $content, params }) {
+        const content = await $content("home")
+        .fetch();
 
+        return {
+            content
+        }
+    },
 }
 </script>
 

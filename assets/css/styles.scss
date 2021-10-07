@@ -32,6 +32,24 @@ body {
 
 .container {
     max-width: 100%;
+    
+}
+
+.hero {
+  margin-top: 2rem;
+  text-align: center;
+  
+  background-color: white;
+  padding: .5em;
+  border-radius: .5em;
+
+
+  h1, h2, h3 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding: .5em;
+  }
+
 }
 
 
@@ -71,7 +89,7 @@ main {
 }
 
 .content-block .content ul li {                
-        
+        text-align: left;
 } 
 
 

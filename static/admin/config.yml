@@ -14,6 +14,18 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
   - name: "employment"
     label: "Employment"
     format: "json"
